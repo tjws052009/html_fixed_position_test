@@ -4,9 +4,9 @@ $(function() {
   var timerClear = true;
   $(window).resize(function() {
     if (timerClear == true) {
-      setOffset();
       timerClear = false;
       setTimeout( function() {
+        setOffset();
         timerClear = true;
       }, 200)
     }
